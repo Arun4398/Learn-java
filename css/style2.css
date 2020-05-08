@@ -1,0 +1,27 @@
+html {
+	scroll-behavior: smooth;
+  }
+        
+#backimage {
+ background-repeat: no-repeat;
+          background-attachment: fixed;  
+          background-size: cover;
+        }
+        #image-text
+        {
+            position:absolute;
+            top:40%;
+            left:30%;
+            font-family:cursive; 
+            text-align:center; 
+            font-size:50px;
+        }
+        a:link,a:visited
+        {
+            color:white;
+            text-decoration:none;
+        }
+        #text 
+        {
+            text-decoration:none;
+        }
