@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERFACE</title>
+    <style>
+        h1
+    {
+        text-align: center;
+    }
+        h1,h2,h3,h4
+        {
+              color: red;
+              font-size:20px;
+        }
+        p,blockquote
+        {
+            font-size:20px;
+        }
+        blockquote 
+       {
+        color:blue;
+       }
+       html
+    {
+        font-family: cursive;
+        margin-left:10px;
+    }
+    </style>
+    
+</head>
+<body>
+   
+    
+        <p>=>final class cannot be inherited.<br/><br/>
+
+=>final method can be inherited but cannot be Overriden.<br/><br/>
+
+=>final variables can be inherited but cannot be reinilize.</p>
+
+
+
+<h1>INTERFACE</h1> 
+<h1>[As a part of jdk 8 enhancement interface now on supports concrete methods]</h1>
+		
+	<p>=>Interface is a type where methods are by default abstract variables are by default:
+	  static and final.[from jdk 8 concrete methods also ]</p>
+
+	  	<blockquote>eg:
+	  		interface <><br/>
+			{  <br/>
+			    // declare constant fields  <br/>
+			    // declare methods that abstract<br/>   
+			    // by default.  <br/>
+    		}  </blockquote>
+
+
+	<p>=>it is impossible to create Object of an Interface.<br/><br/>
+
+	=>We can create reference variables of interface type.<br/><br/>
+
+	=>The class inherite the properties of an interface only by using implements keyword.<br/><br/>
+
+	=>the interface from where the properties are inherited is called as SuperInterface.<br/><br/>
+
+	=>the class  which is implements the interface is called as Implemetation class.<br/></p>
+
+
+	<p style="color: green;"><=>If a class implements (inherite) from an Interface then the  Implimentation class(subclass) must 
+	  Override the all the abstract method present in the Super Interface (superclass) else the 
+	  Implimentation class(subclass)  must be declerad as abstract class.</p>
+
+	<p>=>we can inherite Class ---> Interface   impliments [keyword]</p>
+
+		<blockquote style="color: black;">-> A class can implements any Number of Interface.<br/><br/>
+
+		-> A class can extends and implements at the same time. <br/><br/>
+
+		-> A class can extends only one superclass but it can implements any number of<br/>
+	  		Interface at the same time.</blockquote>
+
+				<blockquote>eg:class main extends Object impliments Interface </blockquote>
+
+
+	<p>=>we can inherite Interface ---> Interface  extends [keyword]</p>
+
+        <blockquote style="color: black;" >->An interface cannot implements another interface. <br/><br/>
+
+		->An Interface should only exdends another Interface.</blockquote>
+
+	<p>=>we can inherite Class ---> Class   extends [keyword]<br/><br/>
+
+	=>we cannot inherite Interface --> Class </p>
+
+		<blockquote style="color: black;">->An Interface never Inherit or extends the Class[also Object class].</blockquote>
+		<img src="Image/dia18.jpg" width="500px" height="auto">
+	
+<h3>JDK-8 Interface supports concrete methods:</h3>
+
+	<p>=>concrete methods of interface should be declerad by using keywords</p>
+
+	   <blockquote style="color: black;">->Static[use which should not be Overriden]
+
+	   		<blockquote style="color: black;">-->Static method of Interface can be accessed by using interface name with dot(.) Operator.</blockquote></blockquote>
+
+               <blockquote style="color: black;">->default[use which you want to be Overriden]
+
+	   		<blockquote style="color: black;">-->default methods of Interface can be accessed by using object of its implimentation class only.</blockquote></blockquote>
+
+	<p>=>if you want a within the interface which should not be Overriden in the implimentation classes then the method<br/>
+	declerad to be Static.<br/><br/>
+    
+    =>if you want a within the interface which you want to be Overriden in the implimentation classes then the method<br/>
+	declerad to be default.</p>
+
+	<p>=>if two Interface contain static methods with in the same name and same arguments then, we differentiate with the help<br/>
+	of Interface name.<br/><br/>
+
+	=>if two Interface contain default methods with in the same name and same arguments then, it should overriden in<br/>
+	Implimentation class.</p>
+
+
+		<blockquote>eg:<br/><img src="Image/dia17.png" width="800px" height="auto">
+			<blockquote><a href="https://github.com/Arun4398/Arunkumar/blob/master/interfaceMain.java"target="_blank">1.interfaceMain.java</a><br/>
+			<a href="https://github.com/Arun4398/Arunkumar/blob/master/interfaceMain2.java"target="_blank">2.interfaceMain2.java</a><br/>
+            <a href="https://github.com/Arun4398/Arunkumar/blob/master/interfaceMain3.java"target="_blank">3.interfaceMain3.java</a><br/>
+            <a href="https://github.com/Arun4398/Arunkumar/blob/master/interfaceMain4.java"target="_blank">4.interfaceMain4.java</a></blockquote></blockquote>
+
+    <h2>APPLICATIONS:</h2>
+
+    <p>=>if we have develop a class using two types then we should use interface.<br/><br/>
+
+    =>Note:abstract class cannot be used here becasue a class cannot extends from two different superclasses at the same time.</p>
+
+
+    
+</body>
+</html>

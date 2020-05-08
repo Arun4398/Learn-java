@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Casteing</title>
+    <style>
+        h1
+    {
+        text-align: center;
+    }
+        h1,h2,h3,h4
+        {
+              color: red;
+              font-size:20px;
+        }
+        p,blockquote
+        {
+            font-size:20px;
+        }
+        blockquote
+    {
+        color:blue;
+    }
+    html
+    {
+        font-family: cursive;
+        margin-left:10px;
+    }
+    </style>
+</head>
+<body>
+    <h1>TYPE CASTEING</h1>
+		
+<p>Casteing->Converting<br/><br/>
+
+	=>Converting one type to another Type is called TypeCasteing.<br/><br/>
+
+	=>TypeCasteing is of 2 Types</p> 
+
+		<blockquote style="color: black;">->Primitive Casteing.<br/>
+		->Derived Casteing.</blockquote>
+
+<h2>Primitive Casteing:</h2>
+
+	<p>=>One Primitive data type Converting into another Primitive
+		data type is called as Primitive Casteing.<br/><br/>
+
+    => It has a Two Types</p>
+    <blockquote style="color: black;">->Widening<br/>
+        ->Narrowing</blockquote>
+        
+
+	<h3>Widening:</h3>
+		<blockquote style="color: black;">->Converting lower data type value to higher data type value.<br/><br/>
+		->Widening is done Implicitly by Compiler.</blockquote>
+
+	<h3>Narrowing:</h3>
+	<blockquote style="color: black;">->Converting higher data type value to lower data type value.<br/><br/>
+		->Narrowing should be done by explicitly by programmer by writting<br/><br/>
+		  Casteing statement.
+
+		  <blockquote>	Syntex: (data type) value/variable;<br/><br/>
+
+
+			<a href=""target="_blank">eg:TypeCastingPrimitiveMain.java</a></blockquote></blockquote>
+
+
+	<p>=>if a method haveing Primitive data type argument then for the same method we Can 
+		    pass value which are lower data type compared to given method argument.<br/><br/>
+
+	=>if there are 2 overloaded methods one with lower data type argument ,if you pass the lower data type value
+		 	and call the method Compiler will choose  method with lower data type argument.</p>
+
+		 	<blockquote style="color: black;">->Time takeing for data type Convertion. so it choose lower data type.</blockquote>
+
+	<p>=>Even though int and float have a same capactiy the data is represent in different format.<br/><br/>
+
+	=>Compared to int and float ,float is higher data type and int is lower data type.<br/><br/>
+
+	=>Even though long and double have a same capactiy the data is represent in different format.<br/><br/>
+
+	=>Compared to long and double, double is higher data type and long is lower data type.<br/><br/>
+
+	=>if we store the Character value into tht Integer variable then its UNICODE value will be
+		   stored in the given Integer.<br/><br/>
+
+	=>if we store the other data types value into the Character variable then its value converted to Character
+		    value using UNICODE.<br/><br/></p>
+
+
+		    	<blockquote>eg:
+					
+				   <blockquote><img src="Image/dia19.jpg" width="800px" height="auto"><BR/>
+					<a href=""target="_blank">1.TypeCasteingPrimitiveEg.java</a><br/>
+					<a href=""target="_blank">2.TypeCasteingMain2.java</a><br/>
+					<a href=""target="_blank">3.TypeCasteingMain3.java</a><br/></blockquote></blockquote>
+
+<h2>Derived Casteing:</h2>
+
+	<p>=> Converting one object reference type to another object reference type 
+	  is called as Derived Casteing.<br/><br/>
+
+	  =>Derived Casteing is of 2 types</p>
+
+      <blockquote style="color: black;">->Upcasteing<br/>
+	 	->Downcasteing</blockquote>
+
+<h3>Upcasteing:</h3>
+	
+	<p>=>Converting Subclass object reference to superclass object reference is called as
+	  Upcasteing.<br/><br/>
+
+	=>Upcasteing is achived by storing the address of Subclass object into Superclass reference variable.</p>
+
+	      <blockquote>eg:<br/><blockquote>Superclass ref = new Subclass();</blockquote></blockquote>
+
+	<p>=>Any superclass reference variable pointing Subclass object is called Upcaste reference variable.</p>
+
+	     <blockquote> eg:<br/><blockquote>Subclass ref = new Subclass();<br/>
+
+	              Superclass ref1 = ref;</blockquote></blockquote>
+
+	<p>=>Using Upcasted reference variable we can access only the propreties of superclass and its 
+	   impossible to access the Subclass propreties.</p>
+	   <hr/>
+
+<h1>GOLDEN RULE OF JAVA</h1>
+    
+    <p style="color: green;">=> using Upcasted reference if you call an Overriden method then you always get the propreties of subclass.</p>
+<hr/>
+
+<h3>Downcasteing:</h3>
+
+	<p>=>Converting Upcasted object reference back to Subclass object reference is called Downcasteing.</p>
+
+        <blockquote> eg:
+            <blockquote> Subclass ref = new Subclass();<br/>
+                                            
+	         Superclass ref1 = ref;                -----------Upcasteing<br/>
+
+	         Subclass ref2 = (Subclass)ref1;       -----------Downcasteing</blockquote></blockquote>
+
+
+	<p>=>With Out Upcasteing we did not done Downcasteing. <br/><br/>
+
+	=>Using an Downcasted reference we can access  propreties of Both Superclass and Subclass.</p>
+
+		<blockquote>eg:
+		   <blockquote><a href=""target="_blank">1.DerivedcasteMainEg.java</a><br/>
+			<a href=""target="_blank">2.DerivedabstractMain.java<br/>
+				<a href=""target="_blank">3.DerivedInterfaceMain.java</a></blockquote></blockquote>
+           <hr/>
+
+	                                   <h2 style="color:chocolate;text-align: center;"> What is ClassCastException?	</h2>											 
+																												 		
+	<p style="color: green;">=>whenever we try to Downcaste and Upcasted reference to a different class reference which do not			 
+	  contains the propreties of given Object,the JVM will throw ClassCastException.</p>				     
+																												 
+         <blockquote>eg:<blockquote><a href=""target="_blank">classcaseException.java</a></blockquote></blockquote>
+         <hr/> 									 
+
+	
+
+	<p>=>if method is haveing superclass reference argument then for the same method we can pass all of its Subclass
+	   reference which compared to given method argument.<br/><br/>
+
+	=>if there are 2 overloaded methods one with Superclass reference argument and other with Subclass reference
+	   argument,if we pass the Subclass reference and call the method,Compiler will always choose the lower
+	   method with Subclass reference.<br/><br/>
+
+	=>if you want to access the Superclass propreties which is common to all Subclass then, there is no
+	   need of Downcasteing.</p>
+
+	    <blockquote> eg:
+	      <blockquote> <a href=""target="_blank">1.SuperclassRefMain.java</a><br/>
+	        <a href=""target="_blank">2.SuperclassRefMain2.java</a><br/>
+				<a href=""target="_blank">3.SuperclassRefMain3.java</a>	</blockquote></blockquote>
+
+<h3>Instanceof:[keyword]</h3>
+
+	<p>=> instanceof operator compares given object reference with the given class returns true if it contains the given class
+	   propreties else it returns false.</p>
+
+	     <blockquote>eg:<blockquote><a href=""target="_blank">TypecatseingDerivedMain.java</a> </blockquote></blockquote>
+
+
+    
+</body>
+</html>

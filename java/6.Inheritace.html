@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritace</title>
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+            h1,h2,h3,h4
+            {
+                  color: red;
+                  font-size:20px;
+            }
+            p,blockquote
+            {
+                font-size:20px;
+            }
+            blockquote
+            {
+                color:blue;
+            }
+            html
+    {
+        font-family: cursive;
+        margin-left:10px;
+    }
+           </style>
+
+</head>
+<body>
+   
+    <h1>Inheritace</h1>
+
+   <p>=>One class  Acquiring a properties of  another class is called as Inheritace.<br/><br/>
+
+   =>The Class From where properties are Inherited is called as Superclass or Baseclass or Parantclass.<br/><br/>
+
+   =>The Class Which is Inheriting the  properties is called Subclass or Derivedclass or Childclass.<br/><br/>
+
+   =>In Java Inheritace is achived by using [extends] keyword.<br/><br/>
+
+   =>Useing Superclass Object we can access only Properties Superclass.<br/><br/>
+
+   =>Useing Subclass  Object we can access Properties Both Subclass and  Superclass.</p>
+
+    <blockquote style="color: black;">->Useing Subclass  Object we can access both Static and Non-Static members Properties of Both Subclass and  Superclass.</blockquote>
+
+   <p>=>Constructor of the class cannot be Inherited.[it is done by super();(super statement)]</p>
+
+
+         <blockquote>eg:<br/>
+        <img src="Image/dia8.png" width="800px" height="auto">
+        <blockquote><br/><br/>
+
+              class Superclass<br/>
+               {<br/>
+                  add()<br/>
+                  sub()<br/>
+               }<br/>
+               class Subclass extends Superclass<br/>
+               {<br/>
+                  sin()<br/>
+                  cos()<br/>
+               }</blockquote></blockquote>
+
+  <p> =>final Data member and Function member of the class can be Inherited.</p>
+
+        <blockquote> eg:<br/>
+           <blockquote>class Name<br/>
+           {<br/>
+               final int a;<br/>
+               final public void test()<br/>
+               {<br/>
+                  stmt..;<br/>
+               }<br/>
+           }</blockquote></blockquote>
+
+   <p>=>final classes cannot be Inherited.</p> 
+
+         <blockquote>eg: 
+            <blockquote>final class Name
+            {
+               stmt..;
+            }</blockquote></blockquote>
+
+   <p>=>private Data member and Function member of the class cannot be Inherited.</p>
+
+        <blockquote> eg:<br/>
+           <blockquote> class Name<br/>
+           {<br/>
+               private int a;<br/>
+               private void test()<br/>
+               {<br/>
+                  stmt..;<br/>
+               }<br/>
+           }</blockquote></blockquote>
+
+  <H2>CONSTRUCTOR CHAINING:</H2>
+    
+    <p>=>The Process of Subclass Constructor calling its Superclass Constructor and superclass <br/>
+      Constructor calling Objectclass Constructor is called Constructor chaining.</p>
+
+<hr/>
+
+   <P>=> Different Types of Inheritace are</P>
+
+       <blockquote style="color: black;">1.Single Inheritace.<br/>
+       2.Multilevel Inheritace.<br/>
+       3.Mutiple Inheritace.<br/>
+       4.Hierarchical Inheritace.<br/>
+       5.Hybrid Inheritace.</blockquote>
+
+   <h3>1.SINGLE INHERITACE:</h3>
+
+     <p> =>One Subclass Inheriting from one Single Superclass is called as Single Inheritace.</p>
+
+            <blockquote>eg:
+        <blockquote><img src="Image/dia9.jpg" width="300px" height="auto"><br/>
+               <a href="https://github.com/Arun4398/Arunkumar/blob/master/SingleInheritanceMain.java"target="_blank">SingleInheritanceMain.java</a></blockquote></blockquote>
+
+   <h3>2.MULTILEVEL INHERITACE:</h3>
+
+     <p> =>Subclass Inheriting the properties of Superclass and the Superclass Inheriting the properties of 
+         another Superclass is called as Multilevel Inheritace.</p>
+
+           <blockquote> eg:
+               <blockquote><img src="Image/dia10.jpg" width="300px" height="auto"><br/>
+               <a href="https://github.com/Arun4398/Arunkumar/blob/master/MultilevelInheritanceMain.java"target="_blank">MultilevelInheritanceMain.java</a></blockquote></blockquote>
+
+   <h3>3.MULTIPLE INHERITACE:</h3>
+
+      <p>=>one Subclass Inheriting from 2 or more Subclass Is called Mutiple Inheritace.<br/><br/>
+
+      =>java do not support Mutiple Inheritace.[supported throughn Interface only]</p>
+
+      <img src="Image/dia11.jpg" width="400px" height="auto" >
+
+
+  <h3>4.HIERARCHICAL INHERITACE:</h3>
+
+      <p>=>One Superclass class Inherited by 2 or more Subclass is called Hierarchical Inheritace.</p>
+
+      <p style="color:red">Generalization:</p>
+
+        <blockquote style="color: black;">->Declaring common methods and variables of all Subclasses in One Superclass.</blockquote>
+
+        <p style="color:red">Specialization:</p>
+
+        <blockquote style="color: black;">->Declaring methods and variables Specifically for one Subclass.</blockquote>
+
+            <blockquote>eg:
+                <blockquote><img src="Image/dia12.jpg" width="300px" height="auto"><br/>
+                <a href="https://github.com/Arun4398/Arunkumar/blob/master/HierarchicalInheritanceMain.java"target="_blank">HierarchicalInheritanceMain.java</a></blockquote></blockquote>
+
+  <h3>5.HYBRID INHERITACE:</h3>
+
+      <p>=>It is the combination of Different Type of Inheritance.</p>
+      <img src="Image/dia13.jpg" width="300px" height="auto" >
+
+<hr/>
+
+  <h4>super(); {super statement]   {for Constructor}</h4>
+
+      <p>=>super(); Create the  Object of Superclass whenever Object of the Subclass is Created to Inherit the properties.<br/><br/>
+
+      =>Can be Written explicity by the programmer or implicity by the Compiler in compile time.<br/><br/>
+
+      =>if the superclass contains only parameterized Constructor then the programmer should write the super(); explicity and pass the arguments.<br/><br/>
+
+      =>super(); must be Written only with in Constructor  body and it should be the first stmt in the Constructor.<br/><br/>
+
+      =>Always Superclass Object is Created first and then the properties should Inherited to subclass object.<br/><br/>
+
+      =>Mutiple super(); within the same Constructor body is not allowed.because writting Mutiple super(); may lead creation of <br/>
+        Mutiple superclass objects which is not required.<br/><br/>
+
+      =>Objectclass is the super most class in java. <br/><br/>
+
+      =>Each and Every class Directly or Indirectly inherits from Objectclass. </p>
+
+           <blockquote> <a href="https://github.com/Arun4398/Arunkumar/blob/master/SuperStatement.java"target="_blank">eg:SuperStatement.java</a></blockquote>
+        <hr/>
+
+
+                   <P style="color:darkorange; text-align: center;" >Explain Diamond Problem In Java? OR Why Java Donot Support Mutiple Inheritace?</P>
+                                                                                                                               
+                                 <p style="text-align: center;" >  [solved by using Interface] </p>                                                                
+                                                                                                                                  
+    <p style="color: green;">=>It Create an Ambiguity/Confusion for the Compiler to choose the path from where properties of <br/>                           
+      object class shoud be copied to subclass. <br/> <br/>                                                                                
+                                                                                                                               
+    =>To Call multiple constructor of multiple supercalss  we should write multiple super(); which not supported in java.  <br/> <br/>     
+                                                                                                                               
+    =>If both superclass have the same name and same arguments than it creates an ambifuity for the complier to choose which  <br/>  
+      method should be callee for the execution when it callsed  using subclasses. </p>     
+      <img src="Image/dia14.jpg" width="800px" height="auto" > 
+      <hr/>                                      
+                                                                                                                               
+                                                                                                             
+  <h4>super [keyword]: {for members of Subclass}</h4>
+
+    <p>=> super keyword is special in-bulid reference variable which it will Created By JVM it will point <br/> 
+      to immediate parant class.<br/><br/>
+
+    =>super keyword is used within the Subclass In order to access the properties of immediate Superclass.</p>
+
+        <blockquote><a href="https://github.com/Arun4398/Arunkumar/blob/master/superKeywordMain.java"target="_blank">eg:superKeywordMain.java</a></blockquote>
+
+
+
+
+    
+    
+</body>
+</html>

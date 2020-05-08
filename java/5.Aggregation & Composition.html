@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aggregation & Composition</title>
+    <style>
+        h1
+    {
+        text-align: center;
+    }
+        h1,h2,h3,h4
+        {
+              color: red;
+              font-size:20px;
+        }
+        p,blockquote
+        {
+            font-size:20px;
+        }
+        blockquote 
+       {
+        color:blue;
+       }
+       html
+    {
+        font-family: cursive;
+        margin-left:10px;
+    }
+    </style>
+</head>
+<body>
+  
+        <h1>RELATION BETWEEN CLASSES</h1>
+
+<h2>Class Diagram:</h2>
+
+	<p>=> It is a pictorial representation of class.<br/><br/>
+
+	=> It is helps to understand the logical relation between the classes in much better way.</p>
+
+      <blockquote >class diagram<br/><br/>
+        <img src="Image/dia7.png" width="400px" height="auto">
+        </blockquote>
+
+   <p> => Two are More classes related useing two type of relations</p>
+
+          <blockquote style="color: black;">1.Has-A relation (Aggregation&Composition)<br/>
+
+          2.Is-A relation  (Inhertance)</blockquote>
+
+ <h2>Has-A Relation:</h2>
+
+	<p>=> Has-A relation defines logical dependentcy of one object to another object<br/><br/>
+
+    => Has-A relation are two Types </p>
+
+             <blockquote style="color: black;">  1.Aggregation<br/><br/>
+
+ 		      2.Composition
+
+        <img src="Image/dia6.png" width="800px" height="auto">
+        <blockquote class="eg"> </blockquote></blockquote>
+
+ <h2>Aggregation:</h2>
+
+ 	<p>=>It is a Weaker Has-A relation where one Object is Weakly depended on another Object.<br/><br/>
+
+ 	=>Aggregation is achived by creating Global Static Reference Variable that points to Object of anther class.</p>
+
+
+ 	 <blockquote class="eg" ><a href="https://github.com/Arun4398/Arunkumar/blob/master/AggregationMain.java"target="_blank">eg:AggregationMain.java</a>
+ 	 
+ 	 	<blockquote>->Branch.a1.showdetails();<br/>
+
+ 	 		  <blockquote>Branch        --> Class<br/>
+
+ 	 	 	  a1            --> Global Static Reference Variable of Account type<br/>
+
+ 	  	      showdetails() --> non-static method of Account class<br/></blockquote>
+
+ 	  	->System.out.println();<br/>
+           
+ 	  			<blockquote>System      --> Class<br/>
+
+ 	  			out         --> Global Static Reference Variable of PrintStream type<br/>
+
+ 	  			Prinntln    --> non-static method of PrintStream class</blockquote></blockquote></blockquote>
+
+
+ <h2>Composition:</h2>
+
+  <p>=>It is  a Stronger Has-A relations where existance of the object is Strongly depenedent on another object.<br/><br/>
+
+  =>Composition is achived by creating Global Non-Static Reference Variable that points to Object of another class.</p>
+
+  		 <blockquote class="eg"><a href="https://github.com/Arun4398/Arunkumar/blob/master/ComposisionMain.java"target="_blank">eg:ComposisionMain.java</a></blockquote>
+
+
+</body>
+</html>

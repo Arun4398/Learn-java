@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABSTRACT CLASS & ABSTRACT METHOD</title>
+    <style>
+        h1
+    {
+        text-align: center;
+    }
+        h1,h2,h3,h4
+        {
+              color: red;
+              font-size:20px;
+        }
+        p,blockquote
+        {
+            font-size:20px;
+        }
+        blockquote 
+       {
+        color:blue;
+       }
+       html
+    {
+        font-family: cursive;
+        margin-left:10px;
+    }
+    </style>
+</head>
+<body>
+   
+        <h1>ABSTRACT CLASS & ABSTRACT METHOD</h1>
+		
+		<p>=> A method which has only method Decleration and no method Definiton is called Abstract method.<br/><br/>
+
+		=>Abstract method must be declerad by using abstract Keyword.<br/><br/>
+
+		=>If a class contains aleast one abstract method,then the class must be declerad as abstract class.<br/><br/>
+
+		=>it is Imposible to create a Object of abstract class.<br/><br/>
+        
+		=>we can Create a Reference variable of abstract class.<br/><br/></p>
+
+		<P style="color:darkgreen"><=>If a class inherite from an abstract class then the subclass must Override the all the abstract method <br/>
+		present in the superclass else the subclass must be declerad as abstract class. <br/></P>
+        
+        <p>=>final, private and static methods cannot be Overriden, So abstract method cannot be declerad as final,private,static<br/><br/>
+
+        => within the abstract class</p>
+        	<blockquote style="color: black;">-> only Abstract methods or <br/>
+        	-> only Concrete methods or<br/>
+        	-> both Abstract and Concrete methods.</blockquote>
+
+        <p>=>Non-static Non-private members of abstract class can be Accessed by Createing Object of it sub class<br/><br/>
+
+        =>Static non-private member of abstract class can be accessed by classname.membername;.<br/><br/>
+
+        =>if Generalized method of all the subclass have Different Definition then those methods should be declared as <br/>
+        Abstract method in generalized class. <br/><br/>
+
+        =>By useing abstarct class we can ensure there are no missing method implimentatioms in the sub class.<br/><br/>
+
+        =>abstract class acts a blueprint to create the concrete class.<br/></p>
+
+
+        	<blockquote >eg:<br/>
+        	   <blockquote><a href="https://github.com/Arun4398/Arunkumar/blob/master/AbstractclassMain.java"target="_blank">1.AbstractclassMain.java</a><br/>
+        	   <a href="https://github.com/Arun4398/Arunkumar/blob/master/AbstractclassMain2.java"target="_blank">2.AbstractclassMain2.java</a></blockquote></blockquote>
+
+
+ <h2>CONCRETE METHOD & CONCRETE CLASS:[Normal Method]</h2>
+
+ 		<p>=>A method which has a both method Decleration and Definitaion is called concrete method.<br/><br/>
+
+ 		=>if class contains only concrete method then the class called as concrete class.<br/><br/>
+
+ 		=>if Generalized method of all the subclass have Same Definition then those methods should be declared as <br/>
+ 		 	Concrete method in generalized class.</p>
+
+   
+</body>
+</html>

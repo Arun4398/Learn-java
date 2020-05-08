@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global variable and Local variable</title>
+    <style>
+        h1
+    {
+        text-align: center;
+    }
+    h1,h2,h3,h4
+    {
+          color: red;
+          font-size:20px;
+    }
+    p,blockquote
+    {
+        font-size:20px;
+    }
+    blockquote
+    {
+        color:blue;
+    }
+    html
+    {
+        font-family: cursive;
+        margin-left:10px;
+    }
+    </style>
+</head>
+<body>
+    
+<h1>Global variable and Local variable</h1>
+	
+<h3>Global variable:</h3>
+
+	<p>=> Any variable which is declared within the body of the class is called as Global variable.<br/><br/>
+
+	=> Global variable accessed by all method present in the same class.<br/><br/>
+
+	=> Global variable wil be intialized by the Compiler implicitly with the default value depending on <br/>
+	    the data type of the variable the programmer do not initialize it.<br/><br/>
+
+     => Type of Global variables:</p>
+
+       <blockquote style="color: black;">  1.Primitive static Global variables<br/>
+         2.Reference static Global variables<br/>
+         3.Primitive Non-static Global variables<br/>
+         4.Reference Non-static Global variables<br/><br/></blockquote>
+
+         <blockquote><blockquote> eg:<br/>
+	   class Demo<br/>
+	   {<br/>
+	   	int a;                  // Primitive Non-static Globle variable.<br/>
+        static a1;              // Primitive Static Globle variable.<br/>
+        Account b;              // Reference Non-static Referance Globle variable.<br/>
+        static Account b1;      // Reference Static  Referance Globle variable.<br/><br/>
+        
+	   	   public static void main(String[] args) <br/>
+	   	   {<br/>
+	   		stmt...;<br/>
+	   	   }<br/>
+	   } </blockquote></blockquote>
+
+<h3>Local variable:</h3>
+
+	<p>=>Local variable is cannot be Static or Non-Static. <br/><br/>
+
+	=>Any variable which is declared with the method decleration or within the method definition is called as Local variable.<br/><br/>
+
+	=>Local variable can be accessed only within the methods in which they are declared.<br/><br/>
+
+	=>Local variable must be declared by the progrmmer explicitly.<br/><br/>
+
+  =>Type of LocaL variables:</p>
+
+  <blockquote style="color: black;">1.Primitive Local variables.<br/>
+         2.Reference Local variables.<br/><br/></blockquote>
+
+         <blockquote> <blockquote>eg:<br/>
+  		class Demo<br/>
+  		{<br/>
+  			public void test(ina a) //(arguments)------->local variables<br/>
+  			{<br/>
+  				int a;                // Local variable<br/>
+  			}<br/>
+  			public static void main(String[] args) <br/>
+  			{<br/>
+  				int a;                // Local variable;<br/>
+  				Account a;            // Reference Local variable;<br/>
+  			}<br/>
+  		}<br/><br/>
+
+  eg:<br/>
+     <blockquote><a href="https://github.com/Arun4398/Arunkumar/blob/master/GlobalLocal.java"target="_blank"> 1.GlobalLocal.java</a><br/><br/>
+     2.Types of Global and Local variables<br/><img src="Image/dia4.png" width="800px" height="auto">
+     </blockquote></blockquote></blockquote>
+
+ 
+ 	
+ 
+</body>
+</html>

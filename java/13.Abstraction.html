@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstraction</title>
+    <style>
+        h1
+    {
+        text-align: center;
+    }
+        h1,h2,h3,h4
+        {
+              color: red;
+              font-size:20px;
+        }
+        p,blockquote
+        {
+            font-size:20px;
+        }
+        blockquote
+    {
+        color:blue;
+    }
+    html
+    {
+        font-family: cursive;
+        margin-left:10px;
+    }
+  
+    </style>
+</head>
+
+<body>
+   <h1> ABSTARCTION:</h1>
+
+		<p>Abstraction -> Hidding<br/><br/>
+
+	=>Hidding the implementation details of the class and exposing only the serivce or behavioues is called Abstraction.<br/><br/>
+
+	=>Abstraction is achived by creating 3 layers<br/></p>
+
+<h2>Steps To Achive The Abstraction:</h2>
+
+	<blockquote style="color: black;">1.object implementation layer.<br/>
+
+		<blockquote style="color: black;">->Generalize all the subclass methods and decleraed them as abstract method in a common 
+			Superclass or SuperInterface and create Object implementation layer.</blockquote>
+
+	2.object creation layer.
+
+		<blockquote style="color: black;">->create Object creation layer by createing a class that will create the object of implementation 
+			and upcast it to Superclass or SuperInterface reference.</blockquote>
+
+	3.object utilization layes.
+
+		<blockquote style="color: black;">->within the object utilization layer utilize upcasted reference returned by object creation layer
+        to call a Generalize methods.</blockquote></blockquote>
+        
+        <blockquote>eg:
+            <blockquote><img src="Image/dia21.png" width="800px" height="auto"></blockquote>
+            <blockquote><a href=""target="_blank">CustmorMain.java</a></blockquote></blockquote>
+
+<h2>Loose Coupling:</h2>
+
+	<p>=>By useing Abstraction we can achive Loose Coupling where changes done in the object implementation layer will
+		not have any impact on object utilization layer. </p>
+
+
+</body>
+</html>

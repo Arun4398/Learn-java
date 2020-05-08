@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and Objeect</title>
+    <style>
+        h1
+    {
+        text-align: center;
+    }
+        h1,h2,h3,h4
+        {
+              color: red;
+              font-size:20px;
+        }
+        p,blockquote
+        {
+            font-size:20px;
+        }
+        blockquote
+    {
+        color:blue;
+    }
+    html
+    {
+        font-family: cursive;
+        margin-left:10px;
+    }
+  
+    </style>
+</head>
+<body>
+  
+    <h1>CLASS AND OBJECTS</h1>
+
+    <h3>OBJECTS:</h3>
+        <P>=> Any entity which has states and behaviours is called as Object.<br/><br/>
+           
+            <blockquote style="color: black;">STATES     -> Attributes<br/>
+                        BEHAVIOURS -> Methods<br/></blockquote></P>
+                        <img src="Image/dia1.png" width="800px" height="auto">
+    
+    
+    <H3>CLASSES:</H3>
+        <P>=> Class is blueprint of the objects<br/><br/>
+    
+       => Class wil have 2 typoe of mmembers<br/>
+    <blockquote style="color: black;"> 1. data members  (variables)<br/>
+                  2. Function members (methods)</blockquote>
+    
+      <p> => Members of the class can be 2 type</P>
+        <blockquote style="color: black;">         1. Static     (Access modifier)     -- Static data members & Static function members<br/>
+                             2. Non-Static                       -- Non-Static data members & Non-Static function members<br/></blockquote></P>
+    
+    
+    <H3>STATIC MEMBERS:</H3>
+        <P>=> Any data (or) function members which is decleard using "Static" Keyword<br/>
+        is called as static member.
+    
+        <blockquote>          eg:<br/>
+                              class Demo<br/>
+                              { <br/>
+                               static int a1;<br/>
+                                  public static void test()<br/>
+                               {--------}<br/>
+                              }<br/><br/>
+                            </blockquote> </P>
+    
+      <h4>SAME CLASS</h4>
+       <p>-------------> Using name of the members <br/>
+        <blockquote>Syntex:</blockquote>
+        <blockquote><blockquote> membername;</blockquote></blockquote>
+        <blockquote> eg:<br/>
+                                 System.out.println(a1);<br/>
+                                 
+                                 test();<br/>
+    
+                                 <a href="https://github.com/Arun4398/Arunkumar/blob/master/Staticsame.java"target="_blank">eg:Staticsame.java</a><br/><br/></blockquote></p>
+     
+      <h4>DIFFERENT CLASS</h4>
+        <p> ------------> Only by using Class name with dot(.) operator with member name<br/>
+            <blockquote>    Syntex:</blockquote>
+            <blockquote> <blockquote>     class name.member name;</blockquote></blockquote>
+            <blockquote> eg:<br/>
+                                System.out.println(Demo.a1);<br/>
+                                Demo.test();<br/><br/>
+    
+                <a href="https://github.com/Arun4398/Arunkumar/blob/master/StaticdiffMain.java"target="_blank"> eg:StaticdiffMain.java</a><br/><br/></blockquote></p>
+   <hr/>
+    
+    <h3>NON-STAIC MEMBERS:</h3>
+        <p>=> Any data (or) function members which is decleard WITHOUT using "Static" Keyword<br/>
+        is called as Non-static member.<br/><br/>
+    
+        <blockquote>  eg:   <br/>
+                            class Demo<br/>
+                            {<br/>
+                            int a1;<br/>
+                            public void test()<br/>
+                            {-------}<br/>
+                            }<br/><br/></blockquote></p>
+    
+     <h4> SAME CLASS</h4>
+     <p> (Non-static members accessed by static members)<br/>
+       ------------>Only by Createing an object<br/>
+       <blockquote>  Syntex:</blockquote>
+       <blockquote> <blockquote>  new class name().membername;<br/></blockquote></blockquote>
+    
+       <blockquote>          eg:  <br/>
+                              System.out.println(new Demo().a1);<br/><br/>
+    
+                                 new Demo().test();<br/></blockquote></p>
+    
+      <p>(Non-static members accessed by Non-static members)<br/>
+       ------------>Using name of the members<br/>
+       <blockquote>    Syntex:</blockquote> 
+        <blockquote><blockquote>         membername;<br/></blockquote> </blockquote> 
+    
+        <blockquote>      eg:  <br/>
+                             System.out.println(a1);<br/><br/>
+    
+                             test();<br/><br/>
+    
+                             <a href="https://github.com/Arun4398/Arunkumar/blob/master/Nonstaticsame.java"target="_blank">Nonstaticsame.java</a><br/><br/></blockquote> </p>
+    
+        <h4>DIFFERENT CLASS</h4>
+        <p>(=> Non-static method accessed by static method)&&(Non-static method accessed by Non-static method)<br/>
+        ------------> Only by Createing an Object->new[Keyword] is used to create a Object<br/>
+        <blockquote>   Syntex:</blockquote>
+        <blockquote><blockquote>   new class name().membername;<br/></blockquote> </blockquote> 
+    
+        <blockquote>    eg:   <br/>
+                               System.out.println(new Demo().a1);<br/><br/>
+    
+                                  new Demo().test();<br/><br/>
+    
+                                  <a href="https://github.com/Arun4398/Arunkumar/blob/master/NonstaticdiffMain.java"target="_blank">eg:NonstaticdiffMain.java</a><br/><br/> </blockquote></p>
+                                  <img src="Image/dia3.png" width="800px" height="auto">
+    
+      <hr/>
+    
+        <h3>STATIC    --> only one copy in memory</h3>
+    
+        <h3>NON-STAIC --> multiple copy in memory</h3><br/>
+
+        <img src="Image/dia2.png" width="800px" height="auto">
+    
+    <h4>DATA MEMBERS:</h4>
+    
+        <h3>Static:</h3>
+            <P>=> Any data member whose value will be Same across all the object should be decleard as Static.</P>
+    
+        <h3>Non-Static:</h3>
+            <p>=> Any data member whose value will be Different across all the object should be decleard as Non-Static.<br/><br/></p>
+    
+    <h4>FUNCTION MEMBERS:</h4>
+    
+        <h3>Static:</h3>
+            <p>=> Any function member which using Only Static member present in same class than that functions should be decleard as Static.</p>
+    
+        <h3>Non-Static:</h3>
+            <p>=> Any function member which using  Atleast One Non-Static member present in same class than that functions should be decleard as Non-Static.<br/><br/>
+    
+                <blockquote> <a href="https://github.com/Arun4398/Arunkumar/blob/master/Static_NonStatic.java"target="_blank">eg:Static_NonStatic.java</a></blockquote></p>
+
+  
+</body>
+</html>
