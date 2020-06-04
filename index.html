@@ -4,6 +4,7 @@
     <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
         <title> 
             index
         </title> 
@@ -18,8 +19,12 @@
                 <!-- Navigation Menu -->
                 <nav id="menu"> 
                <ul> 
-                    <li><a href="home.html">Home</a></li> 
-                    <li><a href="#footer">Contact</a></li> 
+                    <li><a href="home.html">
+                        <ion-icon name="home"></ion-icon>&nbsp Home</a>
+                    </li> 
+                    <li><a href="#footer">
+                        <ion-icon name="cube"></ion-icon>&nbsp Contact</a>
+                    </li> 
                </ul> 
                 </nav> 
             </div>     
@@ -35,11 +40,11 @@
             <!-- Section 1  -->
             <section> 
                 <div id="welcome"> 
-            <h1 class="title">Welcome to My website</h1>                    
-            <p> 
-                In this web site we learn java 
+                <h1 class="title">Welcome to My website</h1>                    
+                <p> 
+                    In this web site we learn java 
             
-            </p> 
+                </p> 
                   
             </section> 
   
@@ -58,10 +63,8 @@
                         It is a widely used robust technology.
                         
                     </p>
-                   <span> <a href="java.html"target="blank"
-                         class="button"> 
-                        Know More 
-                    </a> </span>
+                   <span> <a href="java.html" class="button"> Know More </a> 
+                </span>
                 </div> 
         </section>
 
@@ -108,24 +111,35 @@
                 <ul class="contact"> 
                     <li> 
                         <a href="https://www.linkedin.com/in/arun-kumar-185141161/" target="blank"> 
-                            <span><img src="images/li.png" alt="fb" style="width:30px;height:30px;"></span> 
+                            <span>
+                                <div class="icon-0">
+                                    <ion-icon name="logo-linkedin" size="large"></ion-icon>
+                                </div>
+                            </span> 
                         </a> 
                     </li> 
                     
                     <li> 
                         <a href="https://www.facebook.com/profile.php?id=100045931518829" target="blank"> 
-                            <img src="images/fb.png" alt="fb" style="width:30px;height:30px;">
+                            <div class="icon-1">
+                                <ion-icon name="logo-facebook" size="large"></ion-icon>
+                            </div>
                         </a> 
                     </li> 
                     
                     <li> 
                         <a href = "https://www.instagram.com/arungiri_24" target="blank"> 
-                            <img src="images/insta.png" alt="fb" style="width:30px;height:30px;">
+                            <div class="icon-1">
+                                <ion-icon name="logo-instagram" size="large"></ion-icon>
+                            </div>
+                            
                         </a> 
                     </li> 
                 </ul> 
             </div> 
         </footer> 
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
     </body> 
 </html> 
